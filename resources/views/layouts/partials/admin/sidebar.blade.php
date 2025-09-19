@@ -13,9 +13,9 @@ $links = [
 
     [
         'name'   => 'Usuarios',
-        'icon'   => 'fa-solid fa-gauge',
-        'route'  => 'admin.dashboard',
-        'active' => false
+    'icon'   => 'fa-solid fa-user-plus',   // puedes cambiar el icono si quieres
+    'route'  => 'admin.users.index',   // <-- aquí va la ruta correcta
+    'active' => request()->routeIs('admin.users.*')
     ],
 ];
 @endphp

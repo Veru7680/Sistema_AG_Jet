@@ -22,28 +22,17 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
-       
 
 @include('layouts.partials.admin.navigation')
 @include('layouts.partials.admin.sidebar')
 
-
+<!-- Aquí es donde se mostrará la vista específica -->
 <div class="p-4 sm:ml-64">
-   <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-      
-      {{
-         $slot
-      }}
-   
-   </div>
+    @yield('content')
 </div>
 
-       
+@stack('modals')
+@livewireScripts
+</body>
 
-
-
-        @stack('modals')
-
-        @livewireScripts
-    </body>
 </html>
