@@ -12,11 +12,19 @@ $links = [
       ],
 
     [
-        'name'   => 'Usuarios',
+    'name'   => 'Usuarios',
     'icon'   => 'fa-solid fa-user-plus',   // puedes cambiar el icono si quieres
     'route'  => 'admin.users.index',   // <-- aquí va la ruta correcta
     'active' => request()->routeIs('admin.users.*')
     ],
+
+   [
+    'name'   => 'Pacientes',
+    'icon'   => 'fa-solid fa-user-plus',   // el icono lo puedes cambiar si quieres
+    'route'  => 'admin.pacientes.index',   // ✅ ruta principal de pacientes
+    'active' => request()->routeIs('admin.pacientes.*'), // ✅ para marcarlo activo
+],
+
 ];
 @endphp
 

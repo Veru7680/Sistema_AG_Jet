@@ -37,7 +37,7 @@
                 <th class="px-3 py-2">Rol</th>
                 <th class="px-3 py-2">Nombre</th>
                 <th class="px-3 py-2">Email</th>
-                <th class="px-3 py-2">Password</th>
+               <!--  <th class="px-3 py-2">Password</th> -->
                 <th class="px-3 py-2">Foto</th>
                 <th class="px-3 py-2">Creado</th>
                 <th class="px-3 py-2">Actualizado</th>
@@ -51,7 +51,7 @@
                 <td class="px-3 py-2 font-medium">{{ $user->role->nombre_rol ?? 'N/A' }}</td>
                 <td class="px-3 py-2">{{ $user->name }}</td>
                 <td class="px-3 py-2">{{ $user->email }}</td>
-                <td class="px-3 py-2 truncate max-w-xs">{{ $user->password }}</td>
+               <!-- <td class="px-3 py-2 truncate max-w-xs">{{ $user->password }}</td>-->
                 <td class="px-3 py-2">
                     @if($user->profile_photo_path)
                     <img src="{{ asset('storage/' . $user->profile_photo_path) }}" alt="Foto de perfil"
